@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IMDB Movies</title>
+</head>
+<body>
+    <h1>The movies</h1>
+    <ol>
+    {% for movie in movies %}
+        <li>{{movie.title}} | {{movie.year}} | {{movie.imdb}}</li>
+    {% endfor %}
+    </ol>
+</body>
+</html>
